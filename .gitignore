@@ -1,3 +1,10 @@
-﻿.vscode
+﻿.vscode/*
 *.raw
 node_modules
+/cmake-build-debug/*
+/cmake-build-release/*
+.idea/*
+main.exe
+.gitignore
+croppedImageBin.txt
+croppedImage.txt
