@@ -1,0 +1,35 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main  # 触发工作流的分支，可以根据需要调整
+    tags:
+      - 'v*'  # 如果有版本标签 v1.0.0，也会触发发布
+
+jobs:
+  release:
+    runs-on: ubuntu-latest  # 使用 GitHub 提供的 Ubuntu 虚拟机
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2  # 检出代码
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # 设置 Node.js 环境
+        with:
+          node-version: '20'  # 设置你项目所需的 Node.js 版本
+
+      - name: Install dependencies
+        run: |
+          npm install  # 安装项目依赖
+
+      - name: Set up Git config
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions@github.com"  # 设置 Git 配置
+
+      - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的 token 进行发布
+        run: |
+          npx semantic-release  # 执行 semantic-release 发布

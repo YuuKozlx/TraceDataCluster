@@ -9,7 +9,7 @@ module.exports = {
         }],
         ['@semantic-release/git', {
             assets: ['package.json', 'CHANGELOG.md'], // 提交更新的文件
-            message: 'chore(release): ${nextRelease.version} [skip ci]' // 提交信息模板
+            message: 'chore(release): ${nextRelease.version}' // 提交信息模板
         }],
         '@semantic-release/github' // 在 GitHub 上发布 release（可选）
     ],
