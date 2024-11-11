@@ -17,7 +17,7 @@
     "scripts": {
         "commit": "git-cz",
         "changelog": "conventional-changelog  -i CHANGELOG.md -p angular -s -r 0",
-        "prepare": "husky install",
+        "prepare": "husky init",
         "release": "semantic-release"
     },
     "config": {
