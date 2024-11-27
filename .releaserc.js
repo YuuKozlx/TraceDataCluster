@@ -11,7 +11,7 @@ module.exports = {
             assets: ['package.json', 'CHANGELOG.md'], // 提交更新的文件
             message: 'chore(release): ${nextRelease.version}' // 提交信息模板
         }],
-        '@semantic-release/github' // 在 GitHub 上发布 release（可选）
+        //'@semantic-release/github' // 在 GitHub 上发布 release（可选）
     ],
     preset: 'conventionalcommits',  // 使用 Conventional Commits 规范
     tagFormat: '${version}',        // 标签格式
