@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/YuuKozlx/TraceDataCluster/compare/1.2.0...1.3.0) (2024-11-27)
+
+### Features
+
+* 完善TraceDataCluster功能 ([8e1e9da](https://github.com/YuuKozlx/TraceDataCluster/commit/8e1e9dacdaf95f5b0096b6f8f6c9c8cf89dc5ac5))
+
 ## [1.2.0](https://github.com/YuuKozlx/TraceDataCluster/compare/1.1.0...1.2.0) (2024-11-10)
 
 ### Features
