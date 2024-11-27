@@ -8,3 +8,4 @@ main.exe
 .gitignore
 croppedImageBin.txt
 croppedImage.txt
+build/*
